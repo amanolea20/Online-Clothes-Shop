@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.overlay {
+    background-image: url('images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;;
+}
+
+.cart ion-icon {
+   vertical-align: bottom;
+   font-size: 20px;
+   padding-right: 5px;
+}
+.contact ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+ }
+ .index ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+ }
+  
+.review ion-icon{
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+ .cart a {
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.index a {
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contact a {
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.review a {
+    background-color: royalblue;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1{
+    margin-bottom: -2rem;
+    margin-left: -15rem;
+    color: azure;
+    text-shadow: 0 0 25px blue, 0 0 25px black;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    gap: 0.5rem;
+}
+
+input,
+select,
+textarea{
+    padding: 1.6rem;
+    background: transparent;
+    border: 1px solid black;
+}
+
+textarea{
+    height: 10rem;
+    width: 22rem;
+}
+
+button{
+    width: 24rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    background: blue;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 15px blue, 0 0 25px black;
+    animation: animat 2s linear infinite;
+}
+@keyframes animat{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Contact Form Submission</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="website icon" type="png"
+    href="images/icon.png">
+</head>
+
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>SHOP</h2>
+            <ul>
+                <li class="index"><a href="index.html"><ion-icon name="home"></ion-icon>Home</a></li>
+                <li class="contact"><a href="contact.html"><ion-icon name="help"></ion-icon>Contact</a></li>
+                <li class="review"><a href="review.html"><ion-icon name="star-half"></ion-icon>Review</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+    <div class="container">
+        <h1>Contact Form</h1>
+    <form action="https://formspree.io/f/xknedkza" method="POST">
+        <input type="text" name="Name" placeholder="Full Name" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <select name="Subject" required>
+        <option value="Select subject" selected disabled>Select your problem</option>
+        <option>I can't access my cart</option>
+        <option>Product missing?</option>
+        <option>I can't see the products</option>
+        <option>Access</option>
+        <option>I can't put my card details</option>
+        <option>My card has been declined</option>
+        <option>I can't modify the quantity</option>
+        <option>I can't delete a product</option>
+       </select>
+    </div>
+        <textarea name="Message" placeholder="Please tell us more about your problem!" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>
